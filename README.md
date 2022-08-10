@@ -11,6 +11,7 @@ Below you will find all the instructions for each of the katas I have solved as 
 * [8 kyu](#8kyu)
 * [7 kyu](#7kyu)
   1. [Small enough? - Beginner](#SmallEnough)
+  2. [Maximum Multiple](#MaximumMultiple)
 * [6 kyu](#6kyu)
 * [5 kyu](#5kyu)
 * [4 kyu](#4kyu)
@@ -31,6 +32,39 @@ Below you will find all the instructions for each of the katas I have solved as 
 You will be given an array and a limit value. You must check that all values in the array are below or equal to the limit value. If they are, return true. Else, return false.
 
 You can assume all values in the array are numbers.
+
+### Maximum Multiple <a name="MaximumMultiple"></a>
+
+* [Solution](src/main/kotlin/kyu7/maximumMultiple.kt)<br>
+* [Tests](src/test/kotlin/kyu7/MaximumMultipleTest.kt)
+
+Task
+Given a Divisor and a Bound , Find the largest integer N , Such That ,
+
+Conditions :
+N is divisible by divisor
+
+N is less than or equal to bound
+
+N is greater than 0.
+
+Notes
+The parameters (divisor, bound) passed to the function are only positive values .
+It's guaranteed that a divisor is Found .
+Input >> Output Examples
+maxMultiple (2,7) ==> return (6)
+Explanation:
+(6) is divisible by (2) , (6) is less than or equal to bound (7) , and (6) is > 0 .
+
+maxMultiple (10,50)  ==> return (50)
+Explanation:
+(50) is divisible by (10) , (50) is less than or equal to bound (50) , and (50) is > 0 .*
+
+maxMultiple (37,200) ==> return (185)
+Explanation:
+(185) is divisible by (37) , (185) is less than or equal to bound (200) , and (185) is > 0 .
+
+
 
 ## 6 kyu <a name="6kyu"></a>
 
