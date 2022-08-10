@@ -28,6 +28,10 @@ Below you will find all the instructions for each of the katas I have solved as 
 * [Solution](src/main/kotlin/kyu7/smallEnough.kt)<br>
 * [Tests](src/test/kotlin/kyu7/SmallEnoughTest.kt)
 
+You will be given an array and a limit value. You must check that all values in the array are below or equal to the limit value. If they are, return true. Else, return false.
+
+You can assume all values in the array are numbers.
+
 ## 6 kyu <a name="6kyu"></a>
 
 ## 5 kyu <a name="5kyu"></a>
