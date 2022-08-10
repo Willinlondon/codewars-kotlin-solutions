@@ -10,6 +10,7 @@ Below you will find all the instructions for each of the katas I have solved as 
 # Table of contents
 * [8 kyu](#8kyu)
 * [7 kyu](#7kyu)
+  1. [Small enough? - Beginner](#SmallEnough)
 * [6 kyu](#6kyu)
 * [5 kyu](#5kyu)
 * [4 kyu](#4kyu)
@@ -21,6 +22,11 @@ Below you will find all the instructions for each of the katas I have solved as 
 ## 8 kyu <a name="8kyu"></a>
 
 ## 7 kyu <a name="7kyu"></a>
+
+### Small enough? - Beginner <a name="SmallEnough"></a>
+
+* [Solution](src/main/kotlin/kyu7/smallEnough.kt)<br>
+* [Tests](src/test/kotlin/kyu7/SmallEnoughTest.kt)
 
 ## 6 kyu <a name="6kyu"></a>
 
