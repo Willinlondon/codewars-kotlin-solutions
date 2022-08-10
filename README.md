@@ -7,11 +7,14 @@ The good news is that this allows me to upload and keep track of my solutions he
 
 Below you will find all the instructions for each of the katas I have solved as well as internal links to the solution and tests.
 
+Note that some kata use custom matchers for their tests and in many cases the tests have been rewritten and may use different imports. I have also added my own tests on some of the katas.
+
 # Table of contents
 * [8 kyu](#8kyu)
 * [7 kyu](#7kyu)
   1. [Small enough? - Beginner](#SmallEnough)
   2. [Maximum Multiple](#MaximumMultiple)
+  3. [Two Oldest Ages](#TwoOldestAges)
 * [6 kyu](#6kyu)
 * [5 kyu](#5kyu)
 * [4 kyu](#4kyu)
@@ -64,7 +67,20 @@ maxMultiple (37,200) ==> return (185)
 Explanation:
 (185) is divisible by (37) , (185) is less than or equal to bound (200) , and (185) is > 0 .
 
+### Two Oldest Ages <a name="TwoOldestAges"></a>
 
+* [Solution](src/main/kotlin/kyu7/twoOldestAges.kt)<br>
+* [Tests](src/test/kotlin/kyu7/TwoOldestAgesTest.kt)
+
+The two oldest ages function/method needs to be completed. It should take an array of numbers as its argument and return the two highest numbers within the array. The returned value should be an array in the format [second oldest age,  oldest age].
+
+The order of the numbers passed in could be any order. The array will always include at least 2 items. If there are two or more oldest age, then return both of them in array format.
+
+For example (Input --> Output):
+
+[1, 2, 10, 8] --> [8, 10]<br>
+[1, 5, 87, 45, 8, 8] --> [45, 87]<br>
+[1, 3, 10, 0] --> [3, 10]<br>
 
 ## 6 kyu <a name="6kyu"></a>
 
