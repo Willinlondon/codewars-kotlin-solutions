@@ -12,6 +12,7 @@ Note that some kata use custom matchers for their tests and in many cases the te
 # Table of contents
 * [8 kyu](#8kyu)
   1. [String Repeat](#StringRepeat)
+  2. [Even or Odd](#EvenOrOdd)
 * [7 kyu](#7kyu)
   1. [Small enough? - Beginner](#SmallEnough)
   2. [Maximum Multiple](#MaximumMultiple)
@@ -37,6 +38,13 @@ Write a function that accepts an integer n and a string s as parameters, and ret
 Examples (input -> output)
 6, "I"     -> "IIIIII"
 5, "Hello" -> "HelloHelloHelloHelloHello"
+
+### Even or Odd <a name="EvenOrOdd"></a>
+
+* [Solution](src/main/kotlin/kyu8/evenOrOdd.kt)<br>
+* [Tests](src/test/kotlin/kyu8/EvenOrOddTest.kt)
+
+Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
 
 ## 7 kyu <a name="7kyu"></a>
 
