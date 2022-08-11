@@ -16,6 +16,7 @@ Note that some kata use custom matchers for their tests and in many cases the te
   3. [Opposite Number](#OppositeNumber)
   4. [Return Negative](#ReturnNegative)
   5. [Convert a Number to a String!](#ConvertNumberToString)
+  6. [Sum of positive](#SumOfPositive)
 * [7 kyu](#7kyu)
   1. [Small enough? - Beginner](#SmallEnough)
   2. [Maximum Multiple](#MaximumMultiple)
@@ -90,6 +91,17 @@ Examples (input --> output):
 123  --> "123"
 999  --> "999"
 -100 --> "-100"
+
+### Sum of positive <a name="SumOfPositive"></a>
+
+* [Solution](src/main/kotlin/kyu8/sumOfPositive.kt)<br>
+* [Tests](src/test/kotlin/kyu8/SumOfPositiveTest.kt)
+
+You get an array of numbers, return the sum of all of the positives ones.
+
+Example [1,-4,7,12] => 1 + 7 + 12 = 20
+
+Note: if there is nothing to sum, the sum is default to 0.
 
 ## 7 kyu <a name="7kyu"></a>
 
