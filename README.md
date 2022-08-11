@@ -26,7 +26,7 @@ Note that some kata use custom matchers for their tests and in many cases the te
 
 ## 8 kyu <a name="8kyu"></a>
 
-### String Repeat <a name="String Repeat"></a>
+### String Repeat <a name="StringRepeat"></a>
 
 * [Solution](src/main/kotlin/kyu8/stringRepeat.kt)<br>
 * [Tests](src/test/kotlin/kyu8/StringRepeatTest.kt)
