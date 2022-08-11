@@ -13,6 +13,7 @@ Note that some kata use custom matchers for their tests and in many cases the te
 * [8 kyu](#8kyu)
   1. [String Repeat](#StringRepeat)
   2. [Even or Odd](#EvenOrOdd)
+  3. [Opposite Number](#OppositeNumber)
 * [7 kyu](#7kyu)
   1. [Small enough? - Beginner](#SmallEnough)
   2. [Maximum Multiple](#MaximumMultiple)
@@ -45,6 +46,19 @@ Examples (input -> output)
 * [Tests](src/test/kotlin/kyu8/EvenOrOddTest.kt)
 
 Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+
+### Opposite Number <a name="OppositeNumber"></a>
+
+* [Solution](src/main/kotlin/kyu8/oppositeNumber.kt)<br>
+* [Tests](src/test/kotlin/kyu8/OppositeNumberTest.kt)
+
+Very simple, given an integer or a floating-point number, find its opposite.
+
+Examples:
+
+1: -1
+14: -14
+-34: 34
 
 ## 7 kyu <a name="7kyu"></a>
 
