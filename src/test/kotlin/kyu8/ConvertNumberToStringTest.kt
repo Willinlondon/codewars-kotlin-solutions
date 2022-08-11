@@ -1,7 +1,7 @@
 import kotlin.test.assertEquals
 import org.junit.jupiter.api.Test
 
-class TestExample {
+class ConvertNumberToStringTest {
     @Test
     fun testFixed() {
         assertEquals("67", numberToString(67))
