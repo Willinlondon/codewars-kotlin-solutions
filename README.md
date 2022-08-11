@@ -15,6 +15,7 @@ Note that some kata use custom matchers for their tests and in many cases the te
   2. [Even or Odd](#EvenOrOdd)
   3. [Opposite Number](#OppositeNumber)
   4. [Return Negative](#ReturnNegative)
+  5. [Convert a Number to a String!](#ConvertNumberToString)
 * [7 kyu](#7kyu)
   1. [Small enough? - Beginner](#SmallEnough)
   2. [Maximum Multiple](#MaximumMultiple)
@@ -75,6 +76,20 @@ Kata().makeNegative(0)  // return 0
 Notes
 The number can be negative already, in which case no change is required.
 Zero (0) is not checked for any specific sign. Negative zeros make no mathematical sense.
+
+### Convert a Number to a String! <a name="#ConvertNumberToString"></a>
+
+* [Solution](src/main/kotlin/kyu8/convertNumberToString.kt)<br>
+* [Tests](src/test/kotlin/kyu8/ConvertNumberToStringTest.kt)
+
+We need a function that can transform a number (integer) into a string.
+
+What ways of achieving this do you know?
+
+Examples (input --> output):
+123  --> "123"
+999  --> "999"
+-100 --> "-100"
 
 ## 7 kyu <a name="7kyu"></a>
 
