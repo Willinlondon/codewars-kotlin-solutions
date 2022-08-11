@@ -11,6 +11,7 @@ Note that some kata use custom matchers for their tests and in many cases the te
 
 # Table of contents
 * [8 kyu](#8kyu)
+  1. [String Repeat](#StringRepeat)
 * [7 kyu](#7kyu)
   1. [Small enough? - Beginner](#SmallEnough)
   2. [Maximum Multiple](#MaximumMultiple)
@@ -24,6 +25,17 @@ Note that some kata use custom matchers for their tests and in many cases the te
 * [1 kyu](#1kyu)
 
 ## 8 kyu <a name="8kyu"></a>
+
+### String Repeat <a name="String Repeat"></a>
+
+* [Solution](src/main/kotlin/kyu8/stringRepeat.kt)<br>
+* [Tests](src/test/kotlin/kyu8/StringRepeatTest.kt)
+
+Write a function that accepts an integer n and a string s as parameters, and returns a string of s repeated exactly n times.
+
+Examples (input -> output)
+6, "I"     -> "IIIIII"
+5, "Hello" -> "HelloHelloHelloHelloHello"
 
 ## 7 kyu <a name="7kyu"></a>
 
