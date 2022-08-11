@@ -14,6 +14,7 @@ Note that some kata use custom matchers for their tests and in many cases the te
   1. [String Repeat](#StringRepeat)
   2. [Even or Odd](#EvenOrOdd)
   3. [Opposite Number](#OppositeNumber)
+  4. [Return Negative](#ReturnNegative)
 * [7 kyu](#7kyu)
   1. [Small enough? - Beginner](#SmallEnough)
   2. [Maximum Multiple](#MaximumMultiple)
@@ -59,6 +60,21 @@ Examples:
 1: -1
 14: -14
 -34: 34
+
+### Return Negative <a name="ReturnNegative"></a>
+
+* [Solution](src/main/kotlin/kyu8/returnNegative.kt)<br>
+* [Tests](src/test/kotlin/kyu8/ReturnNegativeTest.kt)
+
+In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
+
+Examples
+Kata().makeNegative(1)  // return -1
+Kata().makeNegative(-5) // return -5
+Kata().makeNegative(0)  // return 0
+Notes
+The number can be negative already, in which case no change is required.
+Zero (0) is not checked for any specific sign. Negative zeros make no mathematical sense.
 
 ## 7 kyu <a name="7kyu"></a>
 
