@@ -1,11 +1,6 @@
 object EqualSidesOfAnArray {
     fun findEvenIndex(arr:IntArray): Int {
-        arr.forEachIndexed { index, _ ->
-            if (leftSideTotal(index, arr) == rightSideTotal(index, arr)) {
-                return index
-            }
-        }
-        return -1
+       return arr.indices.indexOfFirst { index -> (leftSideTotal(index, arr) == rightSideTotal(index, arr)) }
     }
 
     private fun leftSideTotal(index: Int, arr: IntArray): Int {
