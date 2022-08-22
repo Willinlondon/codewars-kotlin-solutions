@@ -24,6 +24,7 @@ Note that some kata use custom matchers for their tests and in many cases the te
 * [6 kyu](#6kyu)
   1. [Find the missing letter](#FindTheMissingLetter)
   2. [Equal Sides of an Array](#EqualSidesOfAnArray)
+  3. [Roman Numerals Encoder](#RomanNumeralsEncoder)
 * [5 kyu](#5kyu)
 * [4 kyu](#4kyu)
    1. [The Observed PIN](#TheObservedPIN)
@@ -220,6 +221,32 @@ The lowest index N where the side to the left of N is equal to the side to the r
 
 Note:
 If you are given an array with multiple answers, return the lowest correct index.
+
+### Roman Numerals Encoder <a name="RomanNumeralsEncoder"></a>
+
+* [Solution](src/main/kotlin/kyu6/romanNumeralsEncoder.kt)<br>
+* [Tests](src/test/kotlin/kyu6/RomanNumeralsEncoderTest.kt)
+
+Create a function taking a positive integer as its parameter and returning a string containing the Roman Numeral representation of that integer.
+
+Modern Roman numerals are written by expressing each digit separately starting with the left most digit and skipping any digit with a value of zero. In Roman numerals 1990 is rendered: 1000=M, 900=CM, 90=XC; resulting in MCMXC. 2008 is written as 2000=MM, 8=VIII; or MMVIII. 1666 uses each Roman symbol in descending order: MDCLXVI.
+
+Example:
+
+encode(1000) // should return "M"
+Help:
+
+Symbol    Value
+I          1
+V          5
+X          10
+L          50
+C          100
+D          500
+M          1,000
+Remember that there can't be more than 3 identical symbols in a row.
+
+More about roman numerals - http://en.wikipedia.org/wiki/Roman_numerals
 
 ## 5 kyu <a name="5kyu"></a>
 
