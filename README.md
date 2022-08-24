@@ -26,6 +26,7 @@ Note that some kata use custom matchers for their tests and in many cases the te
   2. [Equal Sides of an Array](#EqualSidesOfAnArray)
   3. [Roman Numerals Encoder](#RomanNumeralsEncoder)
   4. [Tribonacci Sequence](#TribonacciSequence)
+  5. [Roman Numerals Decoder](#RomanNumeralsDecoder)
 * [5 kyu](#5kyu)
 * [4 kyu](#4kyu)
    1. [The Observed PIN](#TheObservedPIN)
@@ -271,6 +272,30 @@ Signature will always contain 3 numbers; n will always be a non-negative number;
 If you enjoyed this kata more advanced and generalized version of it can be found in the Xbonacci kata
 
 Personal thanks to Professor Jim Fowler on Coursera for his awesome classes that I really recommend to any math enthusiast and for showing me this mathematical curiosity too with his usual contagious passion :)
+
+### Roman Numerals Decoder <a name="RomanNumeralsDecoder"></a>
+
+* [Solution](src/main/kotlin/kyu6/romanNumeralsDecoder.kt)<br>
+* [Tests](src/test/kotlin/kyu6/RomanNumeralsDecoderTest.kt)
+
+Create a function that takes a Roman numeral as its argument and returns its value as a numeric decimal integer. You don't need to validate the form of the Roman numeral.
+
+Modern Roman numerals are written by expressing each decimal digit of the number to be encoded separately, starting with the leftmost digit and skipping any 0s. So 1990 is rendered "MCMXC" (1000 = M, 900 = CM, 90 = XC) and 2008 is rendered "MMVIII" (2000 = MM, 8 = VIII). The Roman numeral for 1666, "MDCLXVI", uses each letter in descending order.
+
+Example:
+
+decode("XXI") // should return 21
+Help:
+
+Symbol    Value
+I          1
+V          5
+X          10
+L          50
+C          100
+D          500
+M          1,000
+Courtesy of rosettacode.org
 
 ## 5 kyu <a name="5kyu"></a>
 
