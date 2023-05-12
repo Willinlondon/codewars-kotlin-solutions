@@ -16,32 +16,30 @@ class PaginationHelper<T>(private val collection: List<T>, private val itemsPerP
             }
         }
 
-
-    /**
-     * returns the number of items on the current page. page_index is zero based.
-     * this method should return -1 for pageIndex values that are out of range
-     */
     fun pageItemCount(pageIndex: Int): Int {
-        return if (this.hasCompletePages() && (pageIndex + 1) <= pageCount) {
+        if ((pageIndex + 1) > pageCount) {
+            return -1
+        }
+        return if (this.hasCompletePages()) {
             itemsPerPage
-        } else if (!this.hasCompletePages() && (pageIndex + 1) <= pageCount) {
-            if (pageIndex + 1 == pageCount) {
-                return itemCount % itemsPerPage
-            } else {
-                return pageCount
-            }
         } else {
-            -1
+            return if (pageIndex + 1 == pageCount) {
+                itemCount % itemsPerPage
+            } else {
+                pageCount
+            }
         }
     }
 
-
-    /**
-     * determines what page an item is on. Zero based indexes
-     * this method should return -1 for itemIndex values that are out of range
-     */
     fun pageIndex(itemIndex: Int): Int {
-        TODO()
+        if (itemIndex > itemCount) {
+            return - 1
+        }
+        return if (this.hasCompletePages()) {
+            itemIndex / itemsPerPage
+        } else {
+            itemIndex / itemsPerPage + 1
+        }
     }
 
 
