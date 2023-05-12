@@ -17,7 +17,7 @@ class PaginationHelper<T>(private val collection: List<T>, private val itemsPerP
         }
 
     fun pageItemCount(pageIndex: Int): Int {
-        if ((pageIndex + 1) > pageCount) {
+        if ((pageIndex + 1) > pageCount || pageIndex < 0) {
             return -1
         }
         return if (this.hasCompletePages()) {
@@ -26,20 +26,16 @@ class PaginationHelper<T>(private val collection: List<T>, private val itemsPerP
             return if (pageIndex + 1 == pageCount) {
                 itemCount % itemsPerPage
             } else {
-                pageCount
+                itemsPerPage
             }
         }
     }
 
     fun pageIndex(itemIndex: Int): Int {
-        if (itemIndex > itemCount) {
+        if (itemIndex + 1 > itemCount || itemIndex < 0) {
             return - 1
         }
-        return if (this.hasCompletePages()) {
-            itemIndex / itemsPerPage
-        } else {
-            itemIndex / itemsPerPage + 1
-        }
+        return (itemIndex + 1) / itemsPerPage
     }
 
 

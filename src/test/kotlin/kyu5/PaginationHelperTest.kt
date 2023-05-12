@@ -36,33 +36,58 @@ class PaginationHelperTest {
     }
 
     @Test
+    fun testPageItemCountIncompleteSinglePage() {
+        val helper = PaginationHelper<Char>(listOf('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'), 10)
+        assertEquals(8, helper.pageItemCount(0), "pageCount is returning incorrect value")
+    }
+
+    @Test
     fun testPageItemCountIncompletePages() {
         val helper = PaginationHelper<Char>(listOf('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'), 3)
         assertEquals(2, helper.pageItemCount(2), "pageCount is returning incorrect value")
     }
 
     @Test
-    fun testPageItemCountIndexOutOfRange() {
+    fun testPageItemCountMoreIncompletePages() {
+        val helper = PaginationHelper<Char>(listOf('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i'), 2)
+        assertEquals(2, helper.pageItemCount(1), "pageCount is returning incorrect value")
+    }
+
+    @Test
+    fun testPageItemCountPositiveIndexOutOfRange() {
         val helper = PaginationHelper<Char>(listOf('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'), 3)
         assertEquals(-1, helper.pageItemCount(6), "pageCount is returning incorrect value")
     }
 
     @Test
-    fun testPageIndexOutOfRange() {
+    fun testPageItemCountNegativeIndexOutOfRange() {
+        val helper = PaginationHelper<Char>(listOf('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'), 3)
+        assertEquals(-1, helper.pageItemCount(-24), "pageCount is returning incorrect value")
+    }
+
+    @Test
+    fun testPageIndexOutOfRangePositive() {
         val helper = PaginationHelper<Char>(listOf('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'), 3)
         assertEquals(-1, helper.pageIndex(9), "pageCount is returning incorrect value")
     }
 
     @Test
-    fun testPageIndexCompletePages() {
-        val helper = PaginationHelper<Char>(listOf('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'), 4)
-        assertEquals(2, helper.pageIndex(8), "pageCount is returning incorrect value")
+    fun testPageIndexOutOfRangeNegative() {
+        val helper = PaginationHelper<Char>(listOf('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'), 3)
+        assertEquals(-1, helper.pageIndex(-24), "pageCount is returning incorrect value")
     }
 
     @Test
-    fun testPageIndexIncompletePages() {
-        val helper = PaginationHelper<Char>(listOf('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'), 3)
-        assertEquals(3, helper.pageIndex(8), "pageCount is returning incorrect value")
+    fun testPageIndexCompletePages() {
+        val helper = PaginationHelper<Char>(listOf('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'), 4)
+        assertEquals(2, helper.pageIndex(7), "pageCount is returning incorrect value")
+    }
+
+
+    @Test
+    fun testPageIndexSingleCompletePage() {
+        val helper = PaginationHelper<Char>(listOf('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'), 8)
+        assertEquals(1, helper.pageIndex(7), "pageCount is returning incorrect value")
     }
 
 }
